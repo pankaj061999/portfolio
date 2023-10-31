@@ -4,6 +4,8 @@ import { BannerComponent } from "./Banner";
 import DetailsSection from "./DetailsSection";
 import AboutSection from "./About/index";
 import SkillSection from "./SkillSection";
+import ProjectContact from "./ProjectContact";
+import ProjectSection from "./ProjectSection";
 
 export const HomeComponent = () => {
   return (
@@ -12,6 +14,8 @@ export const HomeComponent = () => {
       <DetailsSection />
       <AboutSection />
       <SkillSection />
+      <ProjectContact />
+      <ProjectSection />
     </Box>
   );
 };
