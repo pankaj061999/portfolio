@@ -24,11 +24,11 @@ const FooterComponent = () => {
                     component="h1"
                     style={{ fontSize: "18px", color: "#fff" }}
                   >
-                    Sahitya
+                    Pankaj
                   </Typography>
                 </Box>
                 <Typography variant="body1">
-                  Sahitya: Your go-to blogging website for sharing ideas,
+                  Pankaj: Your go-to blogging website for sharing ideas,
                   <br />
                   stories, and experiences with a vibrant community of writers
                   and readers. Unleash your creativity and connect with
