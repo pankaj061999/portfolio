@@ -9,6 +9,7 @@ import {
   Paper,
 } from "@mui/material";
 import dynamic from "next/dynamic";
+import { BannerTitleSection } from "@/src/common/BannerTitle";
 
 const MySkillSection = () => {
   const skills = [
@@ -23,30 +24,13 @@ const MySkillSection = () => {
   return (
     <Box component="section" id="skills-section" sx={{ marginTop: "120px" }}>
       <Container>
-        <Grid
-          item
-          xs={12}
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignItems: "center",
-          }}
-        >
-          <Typography
-            variant="h5"
-            sx={{ textTransform: "capitalize", color: "#b1b493" }}
-          >
-            Skills
-          </Typography>
-          <Typography variant="h2" sx={{ mb: 4 }}>
-            My Skills
-          </Typography>
-          <Typography variant="body1">
-            Far far away, behind the word mountains, far from the countries
-            Vokalia and Consonantia
-          </Typography>
-        </Grid>
+        <BannerTitleSection
+          Title={"Skills"}
+          subTitle={"My Skills"}
+          description={
+            "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia"
+          }
+        />
         <Grid
           container
           spacing={0}

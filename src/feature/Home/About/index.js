@@ -10,6 +10,7 @@ import {
 import dynamic from "next/dynamic";
 import { aboutDetails, showInterast } from "@/utils/common";
 import Image from "next/image";
+import { BannerTitleSection } from "@/src/common/BannerTitle";
 
 const AboutSection = () => {
   return (
@@ -58,6 +59,13 @@ const AboutSection = () => {
                     mouth.
                   </Typography>
                 </Grid>
+                {/* <BannerTitleSection
+                  Title={""}
+                  subTitle={"About Me"}
+                  description={
+                    " A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth."
+                  }
+                /> */}
                 {aboutDetails?.length > 0 &&
                   aboutDetails.flat(1).map((item) => {
                     return (

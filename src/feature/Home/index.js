@@ -6,6 +6,7 @@ import AboutSection from "./About/index";
 import SkillSection from "./SkillSection";
 import ProjectContact from "./ProjectContact";
 import ProjectSection from "./ProjectSection";
+import BlogSection from "./Blog";
 
 export const HomeComponent = () => {
   return (
@@ -16,6 +17,7 @@ export const HomeComponent = () => {
       <SkillSection />
       <ProjectContact />
       <ProjectSection />
+      <BlogSection />
     </Box>
   );
 };
