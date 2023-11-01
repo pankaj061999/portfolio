@@ -1,39 +1,9 @@
 import React from "react";
-import { Container, Grid, Paper, Typography } from "@mui/material";
-import Image from "next/image";
+import { Box, Container, Grid, Typography } from "@mui/material";
 import { BannerTitleSection } from "@/src/common/BannerTitle";
+import { blogData } from "@/utils/common";
 
 const BlogSection = () => {
-  const blogData = [
-    {
-      image: "/images/image_1.jpg",
-      date: "July 03, 2020",
-      author: "Admin",
-      comments: 3,
-      title: "Why Lead Generation is Key for Business Growth",
-      content:
-        "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-    },
-    {
-      image: "images/image_1.jpg",
-      date: "July 03, 2020",
-      author: "Admin",
-      comments: 3,
-      title: "Why Lead Generation is Key for Business Growth",
-      content:
-        "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-    },
-    {
-      image: "images/image_1.jpg",
-      date: "July 03, 2020",
-      author: "Admin",
-      comments: 3,
-      title: "Why Lead Generation is Key for Business Growth",
-      content:
-        "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-    },
-  ];
-
   return (
     <section className="ftco-section bg-light" id="blog-section">
       <Container>
@@ -44,6 +14,91 @@ const BlogSection = () => {
             "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia"
           }
         />
+        <Grid sx={{ marginTop: "30px" }}>
+          <Box
+            sx={{
+              display: "flex",
+              flexWrap: "wrap",
+              marginRight: "-15px",
+              marginLeft: "-15px",
+            }}
+          >
+            {blogData?.flat(1).map((item) => {
+              return (
+                <Box
+                  sx={{
+                    width: "100%",
+                    paddingRight: "15px",
+                    paddingLeft: "15px",
+                    display: "flex",
+                    flex: "0 0 33.33333%",
+                    maxWidth: "33.33333%",
+                  }}
+                  key={item?.id}
+                >
+                  <Box sx={{ marginBottom: "30px" }}>
+                    <Box
+                      sx={{
+                        overflow: "hidden",
+                        backgroundSize: "cover",
+                        backgroundRepeat: "no-repeat",
+                        backgroundPosition: "center center",
+                        position: "relative",
+                        display: "block",
+                        width: "100%",
+                        height: "300px",
+                      }}
+                      style={{
+                        backgroundImage: `url(${item?.image})`,
+                      }}
+                    ></Box>
+                    <Box sx={{ margin: "0 auto" }}>
+                      <Box
+                        sx={{
+                          display: "flex",
+                          alignItems: "center",
+                          marginBottom: "3rem",
+                        }}
+                      >
+                        <Typography component="p" sx={{ color: "#b1b493" }}>
+                          <Typography
+                            component="span"
+                            sx={{ marginRight: "2rem" }}
+                          >
+                            {item?.date}
+                          </Typography>
+                          <Typography
+                            component="span"
+                            sx={{ marginRight: "2rem" }}
+                          >
+                            {item?.author}
+                          </Typography>
+                          <Typography
+                            component="span"
+                            sx={{ marginRight: "2rem" }}
+                          >
+                            {item?.comments}
+                          </Typography>
+                        </Typography>
+                      </Box>
+                      <Typography component="h3">
+                        <Typography
+                          component="span"
+                          sx={{ marginRight: "2rem" }}
+                        >
+                          {item?.title}
+                        </Typography>
+                      </Typography>
+                      <Typography component="p" sx={{ color: "#b1b493" }}>
+                        {item?.content}
+                      </Typography>
+                    </Box>
+                  </Box>
+                </Box>
+              );
+            })}
+          </Box>
+        </Grid>
       </Container>
     </section>
   );
