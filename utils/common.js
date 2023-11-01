@@ -60,3 +60,37 @@ export const showInterast = [
     Imagepath: "/images/Home/basketball.png",
   },
 ];
+
+export const blogData = [
+  {
+    id: 0,
+    image: "/images/Home/iphone.jpg",
+    date: "July 03, 2020",
+    author: "Admin",
+    comments: 3,
+    title: "Why Lead Generation is Key for Business Growth",
+    content:
+      "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+  },
+  {
+    id: 1,
+    image: "/images/Home/laptop.jpg",
+    date: "July 03, 2020",
+    author: "Admin",
+    comments: 3,
+    title: "Why Lead Generation is Key for Business Growth",
+    content:
+      "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+  },
+
+  {
+    id: 2,
+    image: "/images/Home/study.jpg",
+    date: "July 03, 2020",
+    author: "Admin",
+    comments: 3,
+    title: "Why Lead Generation is Key for Business Growth",
+    content:
+      "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+  },
+];
