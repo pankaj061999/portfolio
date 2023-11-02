@@ -8,7 +8,7 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   const handleScroll = () => {
-    if (window.scrollY > 10) {
+    if (window.scrollY > 100) {
       setIsScrolled(true);
     } else {
       setIsScrolled(false);
@@ -24,8 +24,8 @@ const Header = () => {
 
   const headerStyle = {
     position: isScrolled ? "fixed" : "fixed",
-    background: isScrolled ? "#fff" : "#000",
-    color: isScrolled ? "#7f8549" : "#fff",
+    background: isScrolled ? "#fff" : "transparent",
+    color: isScrolled ? "#7f8549" : "#000",
     transition: isScrolled ? "background-color 0.10s ease" : "",
     boxShadow: isScrolled ? "0 1px 6px 0 rgba(32, 33, 36, 0.28)" : "none",
   };
@@ -49,7 +49,7 @@ const Header = () => {
               component="h1"
               style={{ fontSize: "24px", fontWeight: "600" }}
             >
-              Pankaj
+              logoHere
             </Typography>
           </Typography>
 

@@ -7,8 +7,10 @@ import {
   CardActionArea,
   CardMedia,
   CardContent,
+  Box,
 } from "@mui/material";
 import ProjectCard from "./ProjectCard";
+import style from "../SkillSection/style";
 
 const ProjectSection = () => {
   const projects = [
@@ -65,16 +67,18 @@ const ProjectSection = () => {
               marginBottom: "40px",
             }}
           >
-            <Typography variant="h5" sx={{ textTransform: "capitalize" }}>
-              Accomplishments
-            </Typography>
-            <Typography variant="h2" sx={{ mb: 4 }}>
-              Our Projects
-            </Typography>
-            <Typography variant="body1">
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia
-            </Typography>
+            <Box sx={style.headingDetails}>
+              <Typography variant="h5" sx={{ textTransform: "capitalize" }}>
+                Accomplishments
+              </Typography>
+              <Typography variant="h2" sx={{ mb: 4 }}>
+                Our Projects
+              </Typography>
+              <Typography variant="body1">
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia
+              </Typography>
+            </Box>
           </Grid>
         </Grid>
         <Grid container spacing={4}>

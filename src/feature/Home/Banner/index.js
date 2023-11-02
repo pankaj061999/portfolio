@@ -1,6 +1,71 @@
-import { Box } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import React from "react";
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import "animate.css";
+import style from "./style";
 export const BannerComponent = () => {
-  return <Box>BannerComponent</Box>;
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+  return (
+    <>
+      <div></div>
+      <Slider {...settings}>
+        <Box sx={style.sliderList}>
+          <Box
+            sx={style.oneThirdLast}
+            style={{ backgroundImage: "url(/images/Home/pankajpic.jpg)" }}
+          >
+            <Box sx={style.overlayBanner}></Box>
+            <Box sx={style.overlayBannerBottom}></Box>
+          </Box>
+
+          <Box sx={style.BannerHeading}>
+            <Typography variant="body1">Hello! This is Clyde</Typography>
+            <Typography variant="h1">
+              Creative <span>UI/UX</span>
+              <br /> Designer &amp; Developer
+            </Typography>
+            <Button
+              sx={style.outlineBtn}
+              style={{ background: "#b1b493", color: "#fff" }}
+            >
+              Hire me
+            </Button>
+            <Button sx={style.outlineBtn}>Download CV</Button>
+          </Box>
+        </Box>
+
+        <Box sx={style.sliderList}>
+          <Box
+            sx={style.oneThirdLast}
+            style={{ backgroundImage: "url(images/Home/bg_2.jpg.webp)" }}
+          >
+            <Box sx={style.overlayBanner}></Box>
+            <Box sx={style.overlayBannerBottom}></Box>
+          </Box>
+          <Box sx={style.BannerHeading}>
+            <Typography variant="body1">Hello! This is Clyde</Typography>
+            <Typography variant="h1">
+              Creative <span>UI/UX</span>
+              <br /> Designer &amp; Developer
+            </Typography>
+            <Button
+              sx={style.outlineBtn}
+              style={{ background: "#b1b493", color: "#fff" }}
+            >
+              Hire me
+            </Button>
+            <Button sx={style.outlineBtn}>Download CV</Button>
+          </Box>
+        </Box>
+      </Slider>
+    </>
+  );
 };

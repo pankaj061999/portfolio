@@ -13,7 +13,7 @@ const ProjectContact = () => {
       <Container>
         <Grid container justifyContent="space-between" alignItems="center">
           <Grid item xs={12} md={8}>
-            <Box style={{ color: "#FFFFFF" }}>
+            <Box>
               <Typography variant="h4">Have a project on your mind.</Typography>
               <Typography variant="body1">
                 A small river named Duden flows by their place and supplies it

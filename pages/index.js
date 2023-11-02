@@ -3,7 +3,7 @@ import { HomeComponent } from "@/src/feature/Home";
 
 export default function Home() {
   return (
-    <Box style={{ marginTop: "90px" }}>
+    <Box>
       <HomeComponent />
     </Box>
   );
