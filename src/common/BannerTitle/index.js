@@ -1,5 +1,6 @@
-import { Grid, Typography } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 import React from "react";
+import style from "@/src/feature/Home/SkillSection/style";
 
 export const BannerTitleSection = ({ Title, subTitle, description }) => {
   return (
@@ -13,16 +14,11 @@ export const BannerTitleSection = ({ Title, subTitle, description }) => {
         alignItems: "center",
       }}
     >
-      <Typography
-        variant="h5"
-        sx={{ textTransform: "capitalize", color: "#b1b493" }}
-      >
-        {Title}
-      </Typography>
-      <Typography variant="h2" sx={{ mb: 4 }}>
-        {subTitle}
-      </Typography>
-      <Typography variant="body1">{description}</Typography>
+      <Box style={style.headingDetails}>
+        <Typography variant="h5">{Title}</Typography>
+        <Typography variant="h2">{subTitle}</Typography>
+        <Typography variant="body1">{description}</Typography>
+      </Box>
     </Grid>
   );
 };

@@ -1,19 +1,32 @@
 import React from "react";
 import { Box, Container, Grid, Typography } from "@mui/material";
-import { BannerTitleSection } from "@/src/common/BannerTitle";
+// import { BannerTitleSection } from "@/src/common/BannerTitle";
 import { blogData } from "@/utils/common";
+import style from "../SkillSection/style";
 
 const BlogSection = () => {
   return (
     <section className="ftco-section bg-light" id="blog-section">
       <Container>
-        <BannerTitleSection
-          Title={"Our Blog"}
-          subTitle={""}
-          description={
-            "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia"
-          }
-        />
+        <Grid
+          item
+          xs={12}
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+        >
+          <Box sx={style.headingDetails}>
+            <Typography variant="h5">Our Blog</Typography>
+            <Typography variant="h2">Blog Content</Typography>
+            <Typography variant="body1">
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia
+            </Typography>
+          </Box>
+        </Grid>
         <Grid sx={{ marginTop: "30px" }}>
           <Box
             sx={{
