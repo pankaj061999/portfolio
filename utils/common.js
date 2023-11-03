@@ -31,7 +31,7 @@ export const aboutDetails = [
   {
     id: 2,
     Title: "Address:",
-    name: "House No 61 sector 18 Old Faridabad Haryana",
+    name: "A-91 sector 20 New Delhi Haryana",
   },
   { id: 3, Title: "Zip code:", name: "121002" },
   { id: 4, Title: "Email:", name: "pankajkmeena12@gmail.com" },

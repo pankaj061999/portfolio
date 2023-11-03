@@ -49,7 +49,7 @@ const Header = () => {
               component="h1"
               style={{ fontSize: "24px", fontWeight: "600" }}
             >
-              logoHere
+              Jupiter
             </Typography>
           </Typography>
 

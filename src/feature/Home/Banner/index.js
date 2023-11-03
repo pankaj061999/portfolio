@@ -29,8 +29,8 @@ export const BannerComponent = () => {
           <Box sx={style.BannerHeading}>
             <Typography variant="body1">Hello! This is Clyde</Typography>
             <Typography variant="h1">
-              Creative <span>UI/UX</span>
-              <br /> Designer &amp; Developer
+              Creative <span>Full Stack Developer</span>
+              <br /> MERN &amp; Developer
             </Typography>
             <Button
               sx={style.outlineBtn}
@@ -38,31 +38,14 @@ export const BannerComponent = () => {
             >
               Hire me
             </Button>
-            <Button sx={style.outlineBtn}>Download CV</Button>
-          </Box>
-        </Box>
-
-        <Box sx={style.sliderList}>
-          <Box
-            sx={style.oneThirdLast}
-            style={{ backgroundImage: "url(images/Home/bg_2.jpg.webp)" }}
-          >
-            <Box sx={style.overlayBanner}></Box>
-            <Box sx={style.overlayBannerBottom}></Box>
-          </Box>
-          <Box sx={style.BannerHeading}>
-            <Typography variant="body1">Hello! This is Clyde</Typography>
-            <Typography variant="h1">
-              Creative <span>UI/UX</span>
-              <br /> Designer &amp; Developer
-            </Typography>
             <Button
+              href="/Pankaj_resume.pdf"
+              target="_blank"
+              download
               sx={style.outlineBtn}
-              style={{ background: "#b1b493", color: "#fff" }}
             >
-              Hire me
+              Download CV
             </Button>
-            <Button sx={style.outlineBtn}>Download CV</Button>
           </Box>
         </Box>
       </Slider>
