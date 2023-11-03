@@ -15,10 +15,12 @@ const MySkillSection = () => {
   const skills = [
     { name: "CSS", value: 95 },
     { name: "HTML", value: 98 },
-    { name: "jQuery", value: 68 },
-    { name: "Photoshop", value: 92 },
-    { name: "WordPress", value: 83 },
+    { name: "NEXT.js", value: 90 },
+    { name: "React.js", value: 92 },
+    { name: "Node.js", value: 60 },
     { name: "SEO", value: 95 },
+    { name: "GA-Tracking", value: 85 },
+    { name: "MongoDB", value: 55 },
   ];
 
   return (
