@@ -9,7 +9,7 @@ const ProjectContact = () => {
         backgroundColor: "rgb(177 180 147)",
         marginTop: "120px",
       }}
-      id="projects"
+     
     >
       <Container>
         <Grid container justifyContent="space-between" alignItems="center">

@@ -1,12 +1,11 @@
 import React from "react";
 import { Box, Container, Grid, Typography } from "@mui/material";
-// import { BannerTitleSection } from "@/src/common/BannerTitle";
 import { blogData } from "@/utils/common";
 import style from "../SkillSection/style";
 
 const BlogSection = () => {
   return (
-    <section className="ftco-section bg-light" id="blog">
+    <section style={{ marginTop: "100px" }} id="blog">
       <Container>
         <Grid
           item
@@ -65,15 +64,9 @@ const BlogSection = () => {
                         backgroundImage: `url(${item?.image})`,
                       }}
                     ></Box>
-                    <Box sx={{ margin: "0 auto" }}>
-                      <Box
-                        sx={{
-                          display: "flex",
-                          alignItems: "center",
-                          marginBottom: "3rem",
-                        }}
-                      >
-                        <Typography component="p" sx={{ color: "#b1b493" }}>
+                    <Box sx={style.blogContent}>
+                      <Box sx={style.BlogContentDetails}>
+                        <Typography component="p">
                           <Typography
                             component="span"
                             sx={{ marginRight: "2rem" }}
@@ -94,17 +87,8 @@ const BlogSection = () => {
                           </Typography>
                         </Typography>
                       </Box>
-                      <Typography component="h3">
-                        <Typography
-                          component="span"
-                          sx={{ marginRight: "2rem" }}
-                        >
-                          {item?.title}
-                        </Typography>
-                      </Typography>
-                      <Typography component="p" sx={{ color: "#b1b493" }}>
-                        {item?.content}
-                      </Typography>
+                      <Typography component="h3">{item?.title}</Typography>
+                      <Typography component="p">{item?.content}</Typography>
                     </Box>
                   </Box>
                 </Box>

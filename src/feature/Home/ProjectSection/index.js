@@ -11,45 +11,11 @@ import {
 } from "@mui/material";
 import ProjectCard from "./ProjectCard";
 import style from "../SkillSection/style";
+import { projects } from "@/utils/common";
 
 const ProjectSection = () => {
-  const projects = [
-    {
-      title: "Branding & Illustration Design",
-      image: "/images/Home/iphone.jpg",
-    },
-    {
-      title: "Branding & Illustration Design",
-      image: "/images/Home/laptop.jpg",
-    },
-    {
-      title: "Branding & Illustration Design",
-      image: "/images/Home/study.jpg",
-    },
-    {
-      title: "Branding & Illustration Design",
-      image: "/images/Home/michelangelo.jpg",
-    },
-    {
-      title: "Branding & Illustration Design",
-      image: "/images/Home/AI.jpg",
-    },
-    {
-      title: "Branding & Illustration Design",
-      image: "/images/Home/robot.jpg",
-    },
-    {
-      title: "Branding & Illustration Design",
-      image: "/images/Home/AItrain.jpg",
-    },
-    {
-      title: "Branding & Illustration Design",
-      image: "/images/Home/drone.jpg",
-    },
-  ];
-
   return (
-    <section id="projects-section">
+    <section id="projects">
       <Container>
         <Grid
           container
@@ -82,7 +48,7 @@ const ProjectSection = () => {
           </Grid>
         </Grid>
         <Grid container spacing={4}>
-          {projects.map((project, index) => (
+          {projects?.flat(1)?.map((project, index) => (
             <Grid item key={index} xs={12} md={3} sx={{ mb: 4 }}>
               <ProjectCard project={project} />
             </Grid>

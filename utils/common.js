@@ -100,7 +100,7 @@ export const contactInfo = [
     id: 0,
     iconName: "LocationOn",
     title: "Address",
-    text: "198 West 21th Street, Suite 721 New York NY 10016",
+    text: "A-91 sector 20 New Delhi Haryana",
   },
   {
     id: 1,
@@ -119,5 +119,40 @@ export const contactInfo = [
     iconName: "Language",
     title: "Website",
     text: "hindi",
+  },
+];
+
+export const projects = [
+  {
+    title: "CMS Design",
+    image: "/images/Home/iphone.jpg",
+  },
+  {
+    title: "Music website Design",
+    image: "/images/Home/laptop.jpg",
+  },
+  {
+    title: "News Website Design",
+    image: "/images/Home/study.jpg",
+  },
+  {
+    title: "Branding & Illustration Design",
+    image: "/images/Home/michelangelo.jpg",
+  },
+  {
+    title: "AI & Illustration Design",
+    image: "/images/Home/AI.jpg",
+  },
+  {
+    title: "Robot Website Design",
+    image: "/images/Home/robot.jpg",
+  },
+  {
+    title: "AItrain & Illustration Design",
+    image: "/images/Home/AItrain.jpg",
+  },
+  {
+    title: "Drone & Illustration Design",
+    image: "/images/Home/drone.jpg",
   },
 ];

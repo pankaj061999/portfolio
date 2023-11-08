@@ -19,15 +19,7 @@ const Header = () => {
 
   const handleTabChange = (event, newValue) => {
     setValue(newValue);
-    const sections = [
-      "home",
-      "about",
-      "skills",
-      "services",
-      "projects",
-      "blog",
-      "contact",
-    ];
+    const sections = ["home", "about", "skills", "projects", "blog", "contact"];
     const targetSection = sections[newValue];
 
     scrollToSection(targetSection);
@@ -85,7 +77,6 @@ const Header = () => {
             <Tab label="Home" />
             <Tab label="About" />
             <Tab label="Skills" />
-            <Tab label="Services" />
             <Tab label="Projects" />
             <Tab label="Blog" />
             <Tab label="Contact" />

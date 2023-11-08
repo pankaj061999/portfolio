@@ -28,8 +28,8 @@ const ProjectCard = ({ project }) => {
         transition: "transform 0.2s",
         transform: isHovered ? "scale(1.05)" : "scale(1)",
       }}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
+      // onMouseEnter={handleMouseEnter}
+      // onMouseLeave={handleMouseLeave}
     >
       <CardActionArea>
         <CardMedia
@@ -45,16 +45,24 @@ const ProjectCard = ({ project }) => {
             alignItems: "center",
           }}
         >
-          {isHovered ? (
-            <>
-              <Typography variant="h5" sx={{ textAlign: "center" }}>
-                {project.title}
-              </Typography>
-              <Typography variant="body2" color="textSecondary">
-                Web Design
-              </Typography>
-            </>
-          ) : null}
+          {/* {!isHovered ? ( */}
+          <>
+            <Typography
+              variant="h5"
+              sx={{
+                textAlign: "center",
+                fontSize: "20px",
+                fontWeight: "600",
+                lineHeight: "normal",
+              }}
+            >
+              {project?.title}
+            </Typography>
+            <Typography variant="body2" color="textSecondary">
+              Web Design
+            </Typography>
+          </>
+          {/* ) : null} */}
         </CardContent>
       </CardActionArea>
     </Card>

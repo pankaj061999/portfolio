@@ -16,7 +16,7 @@ export const HomeComponent = () => {
       <DetailsSection />
       <AboutSection />
       <SkillSection />
-      <ProjectContact />
+      {/* <ProjectContact /> */}
       <ProjectSection />
       <BlogSection />
       <ContactSection />

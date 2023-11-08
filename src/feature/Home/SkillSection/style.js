@@ -37,6 +37,30 @@ const style = {
       color: "#999999",
     },
   },
+  BlogContentDetails: {
+    display: "flex",
+    alignItems: "center",
+    marginBottom: "3rem",
+    "& p": {
+      color: "#b1b493",
+      fontSize: "16px",
+      fontWeight: "500",
+    },
+  },
+  blogContent: {
+    margin: "0 auto",
+    "& p": {
+      color: "#999999",
+      fontSize: "16px",
+      fontWeight: "500",
+    },
+    "& h3": {
+      color: "#000",
+      fontSize: "20px",
+      fontWeight: "600",
+      marginBottom: "10px",
+    },
+  },
 };
 
 export default style;
