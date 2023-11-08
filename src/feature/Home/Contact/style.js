@@ -40,8 +40,8 @@ const style = {
     // margin: "0 auto",
     marginBottom: "20px",
     "& svg": {
-      marginTop: "10px",
-      marginLeft: "10px",
+      marginTop: "14px",
+      marginLeft: "13px",
     },
   },
 };
