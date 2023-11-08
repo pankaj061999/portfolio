@@ -1,17 +1,43 @@
+import React, { useState, useEffect } from "react";
 import { AppBar, Box, Tab, Tabs, Toolbar, Typography } from "@mui/material";
 import { useRouter } from "next/router";
-import React, { useEffect, useState } from "react";
-import styles from "./style";
 import dynamic from "next/dynamic";
+import styles from "./style";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [value, setValue] = useState(0);
+  const router = useRouter();
 
   const handleScroll = () => {
     if (window.scrollY > 100) {
       setIsScrolled(true);
     } else {
       setIsScrolled(false);
+    }
+  };
+
+  const handleTabChange = (event, newValue) => {
+    setValue(newValue);
+    const sections = [
+      "home",
+      "about",
+      "skills",
+      "services",
+      "projects",
+      "blog",
+      "contact",
+    ];
+    const targetSection = sections[newValue];
+
+    scrollToSection(targetSection);
+  };
+
+  const scrollToSection = (section) => {
+    const element = document.getElementById(section);
+
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -28,13 +54,6 @@ const Header = () => {
     color: isScrolled ? "#7f8549" : "#000",
     transition: isScrolled ? "background-color 0.10s ease" : "",
     boxShadow: isScrolled ? "0 1px 6px 0 rgba(32, 33, 36, 0.28)" : "none",
-  };
-
-  const [value, setValue] = useState(0);
-  const router = useRouter();
-
-  const handleTabChange = (newValue) => {
-    setValue(newValue);
   };
 
   return (
@@ -57,13 +76,13 @@ const Header = () => {
             sx={{ marginLeft: "auto" }}
             indicatorColor="primary"
             textColor="#fff"
-            onChange={handleTabChange}
             value={value}
             TabIndicatorProps={{
               style: { background: "white" },
             }}
+            onChange={handleTabChange}
           >
-            <Tab label="Home" onClick={() => router.push(`/`)} />
+            <Tab label="Home" />
             <Tab label="About" />
             <Tab label="Skills" />
             <Tab label="Services" />

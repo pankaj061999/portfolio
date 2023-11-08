@@ -14,7 +14,7 @@ export const BannerComponent = () => {
     slidesToScroll: 1,
   };
   return (
-    <>
+    <Box id="home">
       <div></div>
       <Slider {...settings}>
         <Box sx={style.sliderList}>
@@ -49,6 +49,6 @@ export const BannerComponent = () => {
           </Box>
         </Box>
       </Slider>
-    </>
+    </Box>
   );
 };

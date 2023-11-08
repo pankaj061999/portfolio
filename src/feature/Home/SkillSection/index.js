@@ -24,7 +24,7 @@ const MySkillSection = () => {
   ];
 
   return (
-    <Box component="section" id="skills-section" sx={style.skillSection}>
+    <Box component="section" id="skills" sx={style.skillSection}>
       <Container>
         <Grid
           item

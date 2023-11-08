@@ -6,7 +6,7 @@ import style from "../SkillSection/style";
 
 const BlogSection = () => {
   return (
-    <section className="ftco-section bg-light" id="blog-section">
+    <section className="ftco-section bg-light" id="blog">
       <Container>
         <Grid
           item

@@ -14,7 +14,7 @@ import style from "./style";
 
 const AboutSection = () => {
   return (
-    <Box component="section" id="about-section">
+    <Box component="section" id="about">
       <Container>
         <Grid
           container
