@@ -7,6 +7,7 @@ import SkillSection from "./SkillSection";
 import ProjectContact from "./ProjectContact";
 import ProjectSection from "./ProjectSection";
 import BlogSection from "./Blog";
+import ContactSection from "./Contact/index";
 
 export const HomeComponent = () => {
   return (
@@ -18,6 +19,7 @@ export const HomeComponent = () => {
       <ProjectContact />
       <ProjectSection />
       <BlogSection />
+      <ContactSection />
     </Box>
   );
 };

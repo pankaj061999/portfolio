@@ -94,3 +94,30 @@ export const blogData = [
       "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
   },
 ];
+
+export const contactInfo = [
+  {
+    id: 0,
+    iconName: "LocationOn",
+    title: "Address",
+    text: "198 West 21th Street, Suite 721 New York NY 10016",
+  },
+  {
+    id: 1,
+    iconName: "Phone",
+    title: "Phone",
+    text: "+91-8003356924",
+  },
+  {
+    id: 2,
+    iconName: "MailOutline",
+    title: "Email",
+    text: "yoursite.com",
+  },
+  {
+    id: 3,
+    iconName: "Language",
+    title: "Website",
+    text: "hindi",
+  },
+];
