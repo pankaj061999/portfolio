@@ -1,6 +1,4 @@
 import Image from 'next/image';
-
-import SagarFullPose from '/public/images/sagar-full-pose.jpg';
 import Tag from '@/components/data-display/tag';
 import Container from '@/components/layout/container';
 import Typography from '@/components/general/typography';
@@ -37,14 +35,6 @@ const AboutMeSection = () => {
           </Typography>
           <Typography>
             I&apos;m a passionate,{' '}
-            <Link
-              noCustomization
-              externalLink
-              withUnderline
-              href={EXTERNAL_LINKS.FIGMA}
-            >
-              self-proclaimed designer
-            </Link>{' '}
             who specializes in full stack development (React.js & Node.js). I am
             enthusiastic about bringing the technical and visual aspects of
             digital products to life. User experience, pixel perfect design, and
