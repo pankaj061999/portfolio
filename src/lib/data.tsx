@@ -43,9 +43,6 @@ export const EXTERNAL_LINKS = {
   GITHUB: 'https://github.com/pankaj061999',
   GITHUB_REPO: 'https://github.com/shahsagarm/sagarshah.dev',
   TWITTER: 'https://x.com/pankajk66711680',
-  FIGMA: 'https://www.figma.com/@shahsagarm',
-  FIGMA_FILE:
-    'https://www.figma.com/community/file/1262992249991763120/Personal-Portfolio-Website-Template-%7C-Mobile-%26-Desktop',
 };
 
 export const NAV_LINKS = [
@@ -75,10 +72,6 @@ export const SOCIAL_LINKS = [
   {
     icon: Twitter,
     url: 'https://x.com/pankajk66711680',
-  },
-  {
-    icon: Figma,
-    url: 'https://www.figma.com/@shahsagarm',
   },
 ];
 
