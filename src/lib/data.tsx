@@ -1,4 +1,4 @@
-import { Github, Twitter, Figma } from 'lucide-react';
+import { Github, Twitter } from 'lucide-react';
 
 import LogoJavascript from '/public/images/logos/icon-javascript.svg';
 import LogoTypescript from '/public/images/logos/icon-typescript.svg';
@@ -22,10 +22,13 @@ import LogoGit from '/public/images/logos/icon-git.svg';
 import LogoFanTiger from '/public/images/logofantiger.jpeg';
 import LogoAgie from '/public/images/logo-agie.webp';
 import LogoKreditBee from '/public/images/keditBeeLogo.png';
+import AGIEWeb from "/public/images/AgieWeb.png"
+import NJCWebImage from "/public/images/NJCWeb.png"
+import CMSFANTV from "/public/images/CMSFanTV.png"
+import BlogWebSite from "/public/images/BlogWebSite.png"
 
-
-import ProjectFiskil from '/public/images/project-fiskil.png';
-import ProjectWingie from '/public/images/project-wingie.png';
+import StrapeDarkLogo from '/public/images/logos/Strapidark.svg';
+import StrapeLightLogo from '/public/images/logos/Strapilight.svg';
 import ProjectPepehousing from '/public/images/project-pepehousing.png';
 
 import AvatarKrisztian from '/public/images/avatar-krisztian.png';
@@ -108,9 +111,10 @@ export const TECHNOLOGIES: TechDetails[] = [
     url: 'https://expressjs.com/',
   },
   {
-    label: 'Nest.js',
-    logo: LogoNest,
-    url: 'https://nestjs.com/',
+    label: 'Strapi',
+    logo: StrapeDarkLogo,
+    darkModeLogo: StrapeDarkLogo,
+    url: 'https://strapi.io/',
   },
   {
     label: 'Socket.io',
@@ -129,11 +133,6 @@ export const TECHNOLOGIES: TechDetails[] = [
     url: 'https://www.mongodb.com/',
   },
   {
-    label: 'Sass/Scss',
-    logo: LogoSass,
-    url: 'https://sass-lang.com/',
-  },
-  {
     label: 'Tailwindcss',
     logo: LogoTailwindcss,
     url: 'https://tailwindcss.com/',
@@ -150,11 +149,6 @@ export const TECHNOLOGIES: TechDetails[] = [
     url: 'https://www.cypress.io/',
   },
   {
-    label: 'Storybook',
-    logo: LogoStorybook,
-    url: 'https://storybook.js.org/',
-  },
-  {
     label: 'Git',
     logo: LogoGit,
     url: 'https://git-scm.com/',
@@ -169,86 +163,121 @@ export const EXPERIENCES: ExperienceDetails[] = [
     position: 'Full Stack Developer',
     startDate: new Date(2020, 11),
     endDate: new Date(2021, 11),
-    summary: ['Worked as a full stack developer (Next.js, Materail UI).'],
+    summary: [
+      'Worked as a full stack developer (Next.js, Material UI, React.js, Golang, MySQL, AWS - API Gateway, SNS, S3).',
+      'Wrote frontend test cases using Cypress.',
+      'Completed an email verification project through OTP verification.',
+      'Spearheaded Product Development Lifecycle from understanding the Business Case to Implementation.',
+      'Modified the app/website according to product requirements to deliver new features and enhancements.',
+      'Conceptualized and implemented a plan to integrate a 3rd-party Channel Manager.'
+    ]
   },
   {
     logo: LogoFanTiger,
     darkModeLogo: LogoFanTiger,
     logoAlt: 'FanTiger logo',
-    position: 'Frontend Developer',
+    position: 'Full Stack Developer',
     startDate: new Date(2022, 3),
-    endDate: new Date(2024, 9),
-    summary: ['Worked as a full stack developer (Next.js, Node.js, Materail UI).'],
+    endDate: new Date(2023, 9),
+    summary: [
+      'FanTiger: Contributed to a music NFT marketplace for creating, buying, and selling digital collectibles.',
+      'Front-End: Developed responsive web components and payment features using JavaScript, React.js, Next.js, and Redux.js.',
+      'Back-End: Built APIs and server-side apps with Node.js, Express.js, and MongoDB (Mongoose). Implemented CRUD operations and secure authentication.',
+      'CMS: Led Strapi-based CMS development, ensuring security and scalability.',
+      'Community: Created React components, real-time features with Socket.io, and optimized user engagement.',
+      'Analytics: Implemented Google Tag Manager and Analytics. Built systems with search, sort, edit, and payment functionalities.'
+    ]
   },
-  {
-    logo: LogoAgie,
-    darkModeLogo: LogoAgie,
-    logoAlt: 'Agie logo',
-    position: 'Frontend Developer',
-    startDate: new Date(2023, 11),
-    endDate: new Date(2024, 2),
-    summary: ['Worked as a frontend developer (Next.js, Materail UI).'],
-  },
-
-
+  // {
+  //   logo: LogoAgie,
+  //   darkModeLogo: LogoAgie,
+  //   logoAlt: 'Agie logo',
+  //   position: 'Frontend Developer',
+  //   startDate: new Date(2023, 11),
+  //   endDate: new Date(2024, 2),
+  //   summary: ['Worked as a frontend developer (Next.js, Materail UI).'],
+  // },
 ];
 
 export const PROJECTS: ProjectDetails[] = [
   {
-    name: 'Wingie',
-    description:
-      'A platform for comparing and finding affordable flights, as well as booking and purchasing tickets safely and easily in a few simple clicks.',
-    url: 'https://www.wingie.com',
-    previewImage: ProjectWingie,
+    name: 'Agie',
+    description: 'AGIE empowers enterprises with Generative AI, featuring responsive frontend components and AI model integration using Next.js and Material UI. It enhances UI/UX for performance monitoring, improves usability, security, and scalability, and supports business innovation through ongoing updates.',
+    url: 'https://agie.ai/',
+    previewImage: AGIEWeb,
     technologies: [
       'React',
       'Typescript',
-      'React Bootstrap',
-      'Firebase',
-      'Express.js',
-      'PostgreSQL',
-      'Styled Components',
+      'Material Ui',
       'Redux',
+      'Tailwindcss',
     ],
   },
   {
-    name: 'Fiskil',
-    description:
-      'A platform for accessing real-time open banking and energy data to help you grow your business, backed with scalable back-end infrastructure.',
-    url: 'https://fiskil.com.au',
-    previewImage: ProjectFiskil,
+    name: 'Nigeria Judicial',
+    description: 'A platform for the National Judicial Council of Nigeria (NJC), developed using Next.js and AI technologies. It features AI-driven case filtering, law book navigation, and region-specific listings, with detailed court and judgment pages. The platform enhances legal resource accessibility and user engagement through an intuitive, responsive interface, leveraging Material UI and advanced AI/LLM technologies.',
+    url: 'http://4.231.121.68:3000/',
+    previewImage: NJCWebImage,
     technologies: [
       'React',
       'Next.js',
-      'Typescript',
-      'Tailwindcss',
+      'TypeScript',
       'Material UI',
-      'Redux Toolkit',
-      'React Query',
-      'Express.js',
-      'PostgreSQL',
-      'Firebase',
-      'AWS Amplify',
-      'Cypress',
-      'Storybook',
-    ],
+      'Tailwindcss',
+    ]
   },
   {
-    name: 'Pepehousing',
-    description:
-      'A platform for renting a flat or room in Poland. You may browse hundreds of verified deals, contact the vendor, and pay online in a simple and secure manner.',
-    url: 'https://pepehousing.com',
+    name: 'KismatBazzar',
+    description: 'Developed a dynamic ecommerce platform using Medusa in NodeJS with a Next.js frontend. The project featured a responsive UI/UX built with TypeScript, Tailwind CSS, and Material UI. Integrated Cashfree and Stripe for payment processing. Included a post-purchase game feature to boost user engagement and satisfaction.',
+    url: 'http://example.com/',
     previewImage: ProjectPepehousing,
     technologies: [
-      'React',
       'Next.js',
-      'Typescript',
-      'Tailwindcss',
-      'Redux Toolkit',
-      'React Query',
-      'Storybook',
-    ],
+      'TypeScript',
+      'Tailwind CSS',
+      'Material UI',
+      'Medusa',
+      'Cashfree',
+      'Stripe',
+      'ReduxToolkit',
+    ]
   },
+  {
+    name: 'CMS Services',
+    description: 'Developed a custom content management system (CMS) with user authentication and role-based access control. Created RESTful APIs for flexible content delivery and a dynamic admin panel using React or Next.js. Utilized Node.js and MongoDB for backend development.',
+    url: 'https://cms.fantv.in/',
+    previewImage: CMSFANTV,
+    technologies: [
+      'JavaScript',
+      'HTML/CSS',
+      'Node.js',
+      'React.js',
+      'Next.js',
+      'Webpack',
+      'Tailwind CSS',
+      'ReduxToolkit',
+      'Git',
+      'MongoDB'
+    ]
+  },
+  {
+    name: 'Blogify',
+    description: 'Conceptualized and developed "Blogify," a full-stack personal blog website. Utilized Express.js, Node.js, MongoDB, React.js, and Redux.js. Features include user authentication, social sharing, favorites, content reporting, and a follow system. Designed a responsive UI/UX to enhance user engagement and experience.',
+    url: 'http://example.com/',
+    previewImage: BlogWebSite,
+    technologies: [
+      'Express.js',
+      'Node.js',
+      'MongoDB',
+      'React.js',
+      'Redux.js',
+      'ReduxToolkit',
+      'Socket.io',
+      'HTML',
+      'CSS',
+      'Git'
+    ]
+  }
 ];
 
 export const TESTIMONIALS: TestimonialDetails[] = [
