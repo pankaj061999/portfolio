@@ -49,10 +49,10 @@ const ExperienceDetails = ({
           {currentlyWorkHere
             ? 'Present'
             : endDate
-            ? new Intl.DateTimeFormat('en-US', dateFormatOptions).format(
+              ? new Intl.DateTimeFormat('en-US', dateFormatOptions).format(
                 endDate
               )
-            : 'NA'}
+              : 'NA'}
         </Typography>
       </div>
     </Card>
