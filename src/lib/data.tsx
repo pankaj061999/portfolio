@@ -26,6 +26,7 @@ import AGIEWeb from "/public/images/AgieWeb.png"
 import NJCWebImage from "/public/images/NJCWeb.png"
 import CMSFANTV from "/public/images/CMSFanTV.png"
 import BlogWebSite from "/public/images/BlogWebSite.png"
+import KismatBazzar from '/public/images/kismatBazzarweb.png'
 
 import StrapeDarkLogo from '/public/images/logos/Strapidark.svg';
 import StrapeLightLogo from '/public/images/logos/Strapilight.svg';
@@ -230,7 +231,7 @@ export const PROJECTS: ProjectDetails[] = [
     name: 'KismatBazzar',
     description: 'Developed a dynamic ecommerce platform using Medusa in NodeJS with a Next.js frontend. The project featured a responsive UI/UX built with TypeScript, Tailwind CSS, and Material UI. Integrated Cashfree and Stripe for payment processing. Included a post-purchase game feature to boost user engagement and satisfaction.',
     url: 'http://example.com/',
-    previewImage: ProjectPepehousing,
+    previewImage: KismatBazzar,
     technologies: [
       'Next.js',
       'TypeScript',
