@@ -7,17 +7,14 @@ import LogoNextjs from '/public/images/logos/icon-nextjs.svg';
 import LogoNodejs from '/public/images/logos/icon-nodejs.svg';
 import LogoExpress from '/public/images/logos/icon-express.svg';
 import LogoExpressLight from '/public/images/logos/icon-express-light.svg';
-import LogoNest from '/public/images/logos/icon-nest.svg';
 import LogoSocket from '/public/images/logos/icon-socket.svg';
 import LogoSocketLight from '/public/images/logos/icon-socket-light.svg';
 import LogoPostgreSQL from '/public/images/logos/icon-postgresql.svg';
 import LogoMongoDB from '/public/images/logos/icon-mongodb.svg';
-import LogoSass from '/public/images/logos/icon-sass.svg';
 import LogoTailwindcss from '/public/images/logos/icon-tailwindcss.svg';
 import LogoFigma from '/public/images/logos/icon-figma.svg';
 import LogoCypress from '/public/images/logos/icon-cypress.svg';
 import LogoCypressLight from '/public/images/logos/icon-cypress-light.svg';
-import LogoStorybook from '/public/images/logos/icon-storybook.svg';
 import LogoGit from '/public/images/logos/icon-git.svg';
 import LogoFanTiger from '/public/images/logofantiger.jpeg';
 import LogoAgie from '/public/images/logo-agie.webp';
@@ -27,10 +24,9 @@ import NJCWebImage from "/public/images/NJCWeb.png"
 import CMSFANTV from "/public/images/CMSFanTV.png"
 import BlogWebSite from "/public/images/BlogWebSite.png"
 import KismatBazzar from '/public/images/kismatBazzarweb.png'
+import MartPuramWeb from '/public/images/Martpuramweb.png'
 
 import StrapeDarkLogo from '/public/images/logos/Strapidark.svg';
-import StrapeLightLogo from '/public/images/logos/Strapilight.svg';
-import ProjectPepehousing from '/public/images/project-pepehousing.png';
 
 import AvatarKrisztian from '/public/images/avatar-krisztian.png';
 import AvatarEugen from '/public/images/avatar-eugen.png';
@@ -263,7 +259,7 @@ export const PROJECTS: ProjectDetails[] = [
   },
   {
     name: 'Blogify',
-    description: 'Conceptualized and developed "Blogify," a full-stack personal blog website. Utilized Express.js, Node.js, MongoDB, React.js, and Redux.js. Features include user authentication, social sharing, favorites, content reporting, and a follow system. Designed a responsive UI/UX to enhance user engagement and experience.',
+    description: 'Conceptualized and developed "Blogify" a full-stack personal blog website. Utilized Express.js, Node.js, MongoDB, React.js, and Redux.js. Features include user authentication, social sharing, favorites, content reporting, and a follow system. Designed a responsive UI/UX to enhance user engagement and experience.',
     url: 'http://example.com/',
     previewImage: BlogWebSite,
     technologies: [
@@ -277,6 +273,27 @@ export const PROJECTS: ProjectDetails[] = [
       'HTML',
       'CSS',
       'Git'
+    ]
+  },
+  {
+    name: "MartPuram",
+    description: "Developed 'MartPuram' a comprehensive e-commerce platform where shopkeepers can list their shop information and products. This platform enables users to visit, browse, and easily find products and verify the existence of shops. The platform integrates Ola Map for location services and uses an OTP-less platform for user verification.",
+    url: "http://example.com/",
+    previewImage: MartPuramWeb,
+    technologies: [
+      "Express.js",
+      "Node.js",
+      "MongoDB",
+      "React.js",
+      "Redux.js",
+      "ReduxToolkit",
+      "Socket.io",
+      "HTML",
+      "CSS",
+      "Git",
+      "firebase",
+      "Ola Map",
+      "OTPLess"
     ]
   }
 ];
