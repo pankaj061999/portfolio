@@ -1,5 +1,5 @@
-import Image from 'next/image';
 import { MapPin } from 'lucide-react';
+import Image from 'next/image';
 
 import SocialIcons from '@/components/data-display/social-icons';
 import Typography from '@/components/general/typography';
@@ -9,7 +9,6 @@ const HeroSection = () => {
   return (
     <Container id="hero">
       <div className="flex flex-col gap-12 md:flex-row">
-        {/* Image */}
         <div className="flex items-center justify-center md:order-last md:flex-grow md:justify-end">
           <div className="relative h-[300px] w-[280px] md:h-[360px] md:w-[320px]">
             <Image
@@ -32,11 +31,7 @@ const HeroSection = () => {
               <span className="inline-block animate-waving-hand">👋</span>
             </Typography>
             <Typography>
-              I&apos;m a full stack developer (React.js & Node.js) with a focus
-              on creating (and occasionally designing) exceptional digital
-              experiences that are fast, accessible, visually appealing, and
-              responsive. Even though I have been creating web applications for
-              over 7 years, I still love it as if it was something new.
+              I&apos;m a full stack developer specializing in React.js and Node.js, with a strong focus on creating (and occasionally designing) exceptional digital experiences that are fast, accessible, visually appealing, and responsive. With over 4 years of experience in web application development, I have a deep knowledge of Next.js, Node.js, and React.js, and I continue to love my work as if it were something new every day.
             </Typography>
           </div>
           <div className="flex flex-col gap-2">
