@@ -158,8 +158,8 @@ export const EXPERIENCES: ExperienceDetails[] = [
     darkModeLogo: LogoKreditBee,
     logoAlt: 'KreditBee logo',
     position: 'Full Stack Developer',
-    startDate: new Date(2020, 11),
-    endDate: new Date(2021, 11),
+    startDate: new Date(2020, 8),
+    endDate: new Date(2021, 8),
     summary: [
       'Worked as a full stack developer (Next.js, Material UI, React.js, Golang, MySQL, AWS - API Gateway, SNS, S3).',
       'Wrote frontend test cases using Cypress.',
@@ -174,8 +174,8 @@ export const EXPERIENCES: ExperienceDetails[] = [
     darkModeLogo: LogoFanTiger,
     logoAlt: 'FanTiger logo',
     position: 'Full Stack Developer',
-    startDate: new Date(2022, 3),
-    endDate: new Date(2023, 9),
+    startDate: new Date(2022, 2),
+    endDate: new Date(2023, 8),
     summary: [
       'FanTiger: Contributed to a music NFT marketplace for creating, buying, and selling digital collectibles.',
       'Front-End: Developed responsive web components and payment features using JavaScript, React.js, Next.js, and Redux.js.',
@@ -185,15 +185,6 @@ export const EXPERIENCES: ExperienceDetails[] = [
       'Analytics: Implemented Google Tag Manager and Analytics. Built systems with search, sort, edit, and payment functionalities.'
     ]
   },
-  // {
-  //   logo: LogoAgie,
-  //   darkModeLogo: LogoAgie,
-  //   logoAlt: 'Agie logo',
-  //   position: 'Frontend Developer',
-  //   startDate: new Date(2023, 11),
-  //   endDate: new Date(2024, 2),
-  //   summary: ['Worked as a frontend developer (Next.js, Materail UI).'],
-  // },
 ];
 
 export const PROJECTS: ProjectDetails[] = [
