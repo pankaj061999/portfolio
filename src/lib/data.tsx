@@ -41,7 +41,7 @@ import {
 
 export const EXTERNAL_LINKS = {
   GITHUB: 'https://github.com/pankaj061999',
-  GITHUB_REPO: 'https://github.com/shahsagarm/sagarshah.dev',
+  GITHUB_REPO: 'https://github.com/pankaj061999/portfolio',
   TWITTER: 'https://x.com/pankajk66711680',
 };
 
