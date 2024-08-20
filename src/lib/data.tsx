@@ -25,6 +25,7 @@ import CMSFANTV from "/public/images/CMSFanTV.png"
 import BlogWebSite from "/public/images/BlogWebSite.png"
 import KismatBazzar from '/public/images/kismatBazzarweb.png'
 import MartPuramWeb from '/public/images/Martpuramweb.png'
+import StremVibeWeb from '/public/images/StreamVibe1.png'
 
 import StrapeDarkLogo from '/public/images/logos/Strapidark.svg';
 
@@ -285,6 +286,27 @@ export const PROJECTS: ProjectDetails[] = [
       "firebase",
       "Ola Map",
       "OTPLess"
+    ]
+  },
+  {
+    name: "Streamvibe",
+    description: "Developed 'Streamvibe,' a personal OTT platform featuring a custom-built video.js player. The platform leverages Node.js and Next.js for backend and frontend development, with Material-UI for styling. Streamvibe provides seamless streaming services, offering a smooth and modern user experience.",
+    url: "https://jupistreamvibe.netlify.app/",
+    previewImage: StremVibeWeb,
+    technologies: [
+      "Node.js",
+      "Next.js",
+      "video.js",
+      "Material-UI",
+      "Express.js",
+      "MongoDB",
+      "React.js",
+      "Redux.js",
+      "ReduxToolkit",
+      "Socket.io",
+      "HTML",
+      "CSS",
+      "Git"
     ]
   }
 ];
