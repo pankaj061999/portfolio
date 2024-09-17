@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ['latin'] });
 const title = 'Pankaj Kumar Meena | Full Stack Developer From New Delhi, India.';
 const description =
   'A self-proclaimed designer who specializes in full stack development (React.js & Node.js), from New Delhi, India.';
-const url = 'https://sagarshah.dev';
+const url = 'https://pankajkumarmeena.netlify.app/';
 
 export const metadata: Metadata = {
   metadataBase: new URL(url),
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     siteName: title,
     images: [
       {
-        url: '/images/open-graph-sagar.png',
+        url: 'https://i.postimg.cc/vHRmqKTr/Pankaj-IITR.jpg',
       },
     ],
   },
@@ -45,8 +45,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title,
     description,
-    creator: '@shahsagarm',
-    images: '/images/open-graph-sagar.png',
+    creator: '@pankaj061999',
+    images: 'https://i.postimg.cc/vHRmqKTr/Pankaj-IITR.jpg',
   },
   icons: {
     icon: '/favicon.ico',
