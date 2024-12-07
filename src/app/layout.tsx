@@ -1,11 +1,11 @@
-import Script from 'next/script';
-import { Inter } from 'next/font/google';
 import { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import Script from 'next/script';
 
-import './globals.css';
+import Footer from '@/components/layout/footer';
 import Header from '@/components/layout/header';
 import { Providers } from '@/lib/providers';
-import Footer from '@/components/layout/footer';
+import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
 

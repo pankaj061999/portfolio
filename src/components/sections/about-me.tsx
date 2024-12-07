@@ -23,77 +23,38 @@ const AboutMeSection = () => {
               style={{ objectFit: 'cover' }}
               height={360}
               width={280}
-            ></Image>
+            />
             <div className="absolute h-[360px] w-[320px] border-8 border-transparent bg-gray-200 max-md:top-5 md:bottom-0 md:left-0 md:h-[420px] md:w-[340px] lg:h-[480px] lg:w-[400px]"></div>
           </div>
         </div>
 
         {/* Content */}
         <div className="flex max-w-xl flex-col gap-6">
-          <Typography variant="h3">
-            Curious about me? Here you have it:
+          <Typography variant="h3">Hi, I&apos;m Pankaj!</Typography>
+          <Typography>
+            I&apos;m a full-stack developer specializing in React.js and Node.js. I&apos;m passionate about creating seamless, pixel-perfect digital experiences. With a focus on clean, readable code and user-centered design, I bring ideas to life through modern web technologies like Next.js, TypeScript, and TailwindCSS.
           </Typography>
           <Typography>
-            I&apos;m a passionate,{' '}
-            who specializes in full stack development (React.js & Node.js). I am
-            enthusiastic about bringing the technical and visual aspects of
-            digital products to life. User experience, pixel perfect design, and
-            writing clear, readable, highly performant code matters to me.
+            After starting my web development journey in 2020, I now create cutting-edge web applications. I&apos;m always learning and love to tackle new challenges.
           </Typography>
           <Typography>
-            I began my journey as a web developer in 2020, and since then,
-            I&apos;ve continued to grow and evolve as a developer, taking on new
-            challenges and learning the latest technologies along the way. Now,
-            in my early thirties, 4 years after starting my web development
-            journey, I&apos;m building cutting-edge web applications using
-            modern technologies such as Next.js, TypeScript, Nestjs,
-            Tailwindcss, Supabase and much more.
+            Currently, I&apos;m looking for a full-time opportunity to collaborate on exciting projects. If you think we could work well together, feel free to reach out!
           </Typography>
           <Typography>
-            I am very much a progressive thinker and enjoy working on products
-            end to end, from ideation all the way to development.
+            When I&apos;m not coding, you can find me on <Link externalLink href={EXTERNAL_LINKS.TWITTER}>Twitter</Link> or <Link externalLink href={EXTERNAL_LINKS.GITHUB}>GitHub</Link>, sharing my journey and building in public.
           </Typography>
-          <Typography>
-            When I&apos;m not in full-on developer mode, you can find me
-            hovering around on twitter, witnessing the
-            journey of early startups or enjoying some free time. You can follow
-            me on{' '}
-            <Link
-              noCustomization
-              externalLink
-              withUnderline
-              href={EXTERNAL_LINKS.TWITTER}
-            >
-              Twitter
-            </Link>{' '}
-            where I share tech-related bites and build in public, or you can
-            follow me on{' '}
-            <Link
-              noCustomization
-              externalLink
-              withUnderline
-              href={EXTERNAL_LINKS.GITHUB}
-            >
-              GitHub
-            </Link>
-            .
-          </Typography>
-          <Typography>Finally, some quick bits about me.</Typography>
+          <Typography>Some quick facts about me:</Typography>
           <div className="flex flex-col gap-2 md:flex-row md:gap-6">
             <ul className="flex list-inside list-disc flex-col gap-2">
-              <Typography component="li">
-                B.Tech in Biotechnology from IIT Roorkee, graduated in 2020
-              </Typography>
-              <Typography component="li">Full time Job</Typography>
+              <Typography component="li">B.Tech in Biotechnology, IIT Roorkee (2020)</Typography>
+              <Typography component="li">Full-time web developer</Typography>
             </ul>
             <ul className="flex list-inside list-disc flex-col gap-2">
-              <Typography component="li">Avid learner</Typography>
-              <Typography component="li">Aspiring indie hacker</Typography>
+              <Typography component="li">Avid learner & aspiring indie hacker</Typography>
             </ul>
           </div>
           <Typography>
-            One last thing, I&apos;m available for freelance work or Full Time Job, so feel free
-            to reach out and say hello! I promise I don&apos;t bite 😉
+            If you&apos;re looking for a passionate, results-driven developer, I&apos;d love to chat. Let&apos;s connect!
           </Typography>
         </div>
       </div>
