@@ -252,7 +252,7 @@ export const PROJECTS: ProjectDetails[] = [
     name: "Blogify",
     description:
       'Conceptualized and developed "Blogify" a full-stack personal blog website. Utilized Express.js, Node.js, MongoDB, React.js, and Redux.js. Features include user authentication, social sharing, favorites, content reporting, and a follow system. Designed a responsive UI/UX to enhance user engagement and experience.',
-    url: "http://example.com/",
+    url: "https://full-stackrepo-practice.vercel.app/",
     previewImage: BlogWebSite,
     technologies: [
       "Express.js",
