@@ -55,7 +55,7 @@ export const metadata: Metadata = {
   },
 };
 
-const googleAnalyticsId = process.env.GOOGLE_ANALYTICS_ID;
+const googleAnalyticsId = `G-3JRNN23QX6`;
 
 export default function RootLayout({
   children,

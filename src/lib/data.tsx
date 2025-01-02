@@ -3,6 +3,7 @@ import { Github, Twitter } from "lucide-react";
 import AGIEWeb from "/public/images/AgieWeb.png";
 import AnimalVitalsWeb from "/public/images/AnimalVitals_Web.png";
 import BlogWebSite from "/public/images/BlogWebSite.png";
+import PeerLearnXLogo from "/public/images/PeerLearnX.png";
 import CMSFANTV from "/public/images/CMSFanTV.png";
 import LogoKreditBee from "/public/images/keditBeeLogo.png";
 import KismatBazzar from "/public/images/kismatBazzarweb.png";
@@ -339,7 +340,7 @@ export const PROJECTS: ProjectDetails[] = [
     name: "SmartShield",
     description:
       "SmartShield is a startup leveraging AI and IoT to offer intelligent solutions. Our platform enhances security, monitoring, and operational efficiency across industries. By using AI algorithms and IoT devices, SmartShield creates smarter, safer environments, pushing the boundaries of technology to improve both business and individual performance.",
-    url: "https://visionary-raindrop-865776.netlify.app/",
+    url: "https://smartshield.netlify.app/",
     previewImage: SmartShieldWeb,
     technologies: [
       "Artificial Intelligence",
@@ -352,6 +353,29 @@ export const PROJECTS: ProjectDetails[] = [
       "ReduxToolkit",
       "Material-UI",
       "Socket.io",
+      "HTML",
+      "CSS",
+      "Git"
+    ]
+  },
+  {
+    name: "PeerLearnX",
+    description:
+      "PeerLearnX is a decentralized peer-to-peer learning platform where users can create, share, and collaborate on courses. Built with Next.js and Node.js, it offers real-time communication, secure authentication, and dynamic course management to enhance the learning experience.",
+    url: "https://peerlearnx.netlify.app/",
+    previewImage: PeerLearnXLogo,
+    technologies: [
+      "Artificial Intelligence",
+      "Socket-client.io",
+      "Node.js",
+      "Next.js",
+      "MongoDB",
+      "React.js",
+      "Redux.js",
+      "ReduxToolkit",
+      "Material-UI",
+      "Socket.io",
+      "GA tracking",
       "HTML",
       "CSS",
       "Git"

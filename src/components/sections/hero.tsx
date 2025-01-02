@@ -1,9 +1,34 @@
+"use client"
+
 import { MapPin } from "lucide-react";
 import Image from "next/image";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import Container from "../layout/container";
+import { useEffect } from "react";
 
 const HeroSection = () => {
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const hasVisited = localStorage.getItem('hasVisited');
+      
+      if (!hasVisited) {
+        const storedVisitCount = localStorage.getItem('visitCount');
+        const visitCount = storedVisitCount ? parseInt(storedVisitCount, 10) + 1 : 1;
+        localStorage.setItem('visitCount', visitCount.toString());
+
+        localStorage.setItem('hasVisited', 'true');
+        
+        if ((window as any).dataLayer) {
+          (window as any).dataLayer.push({
+            event: 'visit',
+            event_category: 'Visit',
+            event_label: `Visit Count: ${visitCount}`,
+            value: visitCount,
+          });
+        }
+      }
+    }
+  }, []);
   return (
     <Container id="hero" className="bg-gradient-to-b from-gray-50 to-gray-200">
       <section className="py-16">
