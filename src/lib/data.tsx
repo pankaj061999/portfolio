@@ -4,6 +4,7 @@ import AGIEWeb from "/public/images/AgieWeb.png";
 import AnimalVitalsWeb from "/public/images/AnimalVitals_Web.png";
 import BlogWebSite from "/public/images/BlogWebSite.png";
 import PeerLearnXLogo from "/public/images/PeerLearnX.png";
+import Tech4LogicWebLogo from "/public/images/Tech4Logic.png";
 import CMSFANTV from "/public/images/CMSFanTV.png";
 import LogoKreditBee from "/public/images/keditBeeLogo.png";
 import KismatBazzar from "/public/images/kismatBazzarweb.png";
@@ -334,6 +335,25 @@ export const PROJECTS: ProjectDetails[] = [
       "IoT",
       "AI",
       "Machine Learning"
+    ]
+  },
+  {
+    name: "Tech4Logic",
+    description:
+      "Future-Proof Your Business with Tech4Logic Since 2018, Tech4Logic has delivered innovative technology solutions to help businesses excel in the digital era. We specialize in modernizing applications and workloads for cloud-first SaaS environments, offering tailored services, strategic partnerships, and ongoing support to maximize your technology investments.",
+    url: "https://tech4logic.com/",
+    previewImage: Tech4LogicWebLogo,
+    technologies: [
+      "Node.js",
+      "Next.js",
+      "MongoDB",
+      "React.js",
+      "Redux.js",
+      "ReduxToolkit",
+      "Material-UI",
+      "HTML",
+      "CSS",
+      "Git"
     ]
   },
   {
