@@ -2,9 +2,6 @@ import { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
 
-import Footer from "@/components/layout/footer";
-import Header from "@/components/layout/header";
-import { Providers } from "@/lib/providers";
 import "./globals.css";
 import UserFuncLayout from "./userFuncLayout";
 
