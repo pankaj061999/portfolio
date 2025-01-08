@@ -1,64 +1,66 @@
-import { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import Script from 'next/script';
+import { Metadata } from "next";
+import { Inter } from "next/font/google";
+import Script from "next/script";
 
-import Footer from '@/components/layout/footer';
-import Header from '@/components/layout/header';
-import { Providers } from '@/lib/providers';
-import './globals.css';
+import Footer from "@/components/layout/footer";
+import Header from "@/components/layout/header";
+import { Providers } from "@/lib/providers";
+import "./globals.css";
+import UserFuncLayout from "./userFuncLayout";
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin"] });
 
-const title = 'Pankaj Kumar Meena | Full Stack Developer From New Delhi, India.';
+const title =
+  "Pankaj Kumar Meena | Full Stack Developer From New Delhi, India.";
 const description =
-  'A self-proclaimed designer who specializes in full stack development (React.js & Node.js), from New Delhi, India.';
-const url = 'https://pankajkumarmeena.netlify.app/';
+  "A self-proclaimed designer who specializes in full stack development (React.js & Node.js), from New Delhi, India.";
+const url = "https://pankajkumarmeena.netlify.app/";
 
 export const metadata: Metadata = {
   metadataBase: new URL(url),
   title,
   description,
   keywords: [
-    'Frontend Developer',
-    'Full Stack Developer',
-    'React Developer',
-    'Next.js Developer',
+    "Frontend Developer",
+    "Full Stack Developer",
+    "React Developer",
+    "Next.js Developer"
   ],
-  creator: 'Pankaj Kumar Meena',
+  creator: "Pankaj Kumar Meena",
   themeColor: [
-    { media: '(prefers-color-scheme: light)', color: 'white' },
-    { media: '(prefers-color-scheme: dark)', color: 'black' },
+    { media: "(prefers-color-scheme: light)", color: "white" },
+    { media: "(prefers-color-scheme: dark)", color: "black" }
   ],
   openGraph: {
-    type: 'website',
+    type: "website",
     url,
     title,
     description,
     siteName: title,
     images: [
       {
-        url: 'https://i.postimg.cc/vHRmqKTr/Pankaj-IITR.jpg',
-      },
-    ],
+        url: "https://i.postimg.cc/vHRmqKTr/Pankaj-IITR.jpg"
+      }
+    ]
   },
   twitter: {
-    card: 'summary_large_image',
+    card: "summary_large_image",
     title,
     description,
-    creator: '@pankaj061999',
-    images: 'https://i.postimg.cc/vHRmqKTr/Pankaj-IITR.jpg',
+    creator: "@pankaj061999",
+    images: "https://i.postimg.cc/vHRmqKTr/Pankaj-IITR.jpg"
   },
   icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon-16x16.png',
-    apple: '/apple-touch-icon.png',
-  },
+    icon: "/favicon.ico",
+    shortcut: "/favicon-16x16.png",
+    apple: "/apple-touch-icon.png"
+  }
 };
 
 const googleAnalyticsId = `G-3JRNN23QX6`;
 
 export default function RootLayout({
-  children,
+  children
 }: {
   children: React.ReactNode;
 }) {
@@ -82,11 +84,9 @@ export default function RootLayout({
         </head>
       ) : null}
       <body className={`${inter.className} bg-gray text-gray-600 antialiased`}>
-        <Providers>
-          <Header />
+        <UserFuncLayout>
           <main className="flex min-h-screen w-full flex-col">{children}</main>
-          <Footer />
-        </Providers>
+        </UserFuncLayout>
       </body>
     </html>
   );

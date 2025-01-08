@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { MapPin } from "lucide-react";
 import Image from "next/image";
@@ -7,28 +7,65 @@ import Container from "../layout/container";
 import { useEffect } from "react";
 
 const HeroSection = () => {
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const hasVisited = localStorage.getItem('hasVisited');
-      
-      if (!hasVisited) {
-        const storedVisitCount = localStorage.getItem('visitCount');
-        const visitCount = storedVisitCount ? parseInt(storedVisitCount, 10) + 1 : 1;
-        localStorage.setItem('visitCount', visitCount.toString());
+  const updatedUserInformation = async () => {
+    try {
+      // Fetch user location data from ipapi
+      const res = await fetch("https://ipapi.co/json/");
+      const data = await res.json();
 
-        localStorage.setItem('hasVisited', 'true');
-        
-        if ((window as any).dataLayer) {
-          (window as any).dataLayer.push({
-            event: 'visit',
-            event_category: 'Visit',
-            event_label: `Visit Count: ${visitCount}`,
-            value: visitCount,
-          });
-        }
+      // Prepare user data
+      const userData = {
+        ip: data.ip,
+        city: data.city,
+        region: data.region,
+        country: data.country_name,
+        country_code: data.country_code,
+        latitude: data.latitude,
+        longitude: data.longitude,
+        timezone: data.timezone,
+        asn: data.asn,
+        org: data.org
+      };
+
+      // Send data to your backend API
+      await fetch(`https://peerlearnx-be.onrender.com/v1/auth/portfolioguest-user`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(userData)
+      });
+    } catch (error) {
+      console.error("Failed to update user information:", error);
+    }
+  };
+
+  useEffect(() => {
+    // Call the function to update user information
+    updatedUserInformation();
+
+    // LocalStorage for visit tracking
+    const hasVisited = localStorage.getItem("hasVisited");
+    if (!hasVisited) {
+      const storedVisitCount = localStorage.getItem("visitCount");
+      const visitCount = storedVisitCount
+        ? parseInt(storedVisitCount, 10) + 1
+        : 1;
+      localStorage.setItem("visitCount", visitCount.toString());
+      localStorage.setItem("hasVisited", "true");
+
+      // Track event using analytics if available
+      if ((window as any).dataLayer) {
+        (window as any).dataLayer.push({
+          event: "visit",
+          event_category: "Visit",
+          event_label: `Visit Count: ${visitCount}`,
+          value: visitCount
+        });
       }
     }
   }, []);
+
   return (
     <Container id="hero" className="bg-gradient-to-b from-gray-50 to-gray-200">
       <section className="py-16">
