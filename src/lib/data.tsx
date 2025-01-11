@@ -403,7 +403,7 @@ export const TESTIMONIALS: TestimonialDetails[] = [
     personAvatar: AvatarKrisztian,
     title: "Co-Founder, Farmako Healthcare",
     testimonial:
-      "Job well done! I am really impressed. He is very very good at what he does:) I would recommend Sagar and will rehire in the future for Frontend development."
+      "Job well done! I am really impressed. He is very very good at what he does:) I would recommend Pankaj Kumar Meena and will rehire in the future for Frontend development."
   },
   {
     personName: "Nikhil Kumar",
