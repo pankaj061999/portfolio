@@ -33,7 +33,7 @@ import StrapeDarkLogo from "/public/images/logos/Strapidark.svg";
 
 import AvatarDummy from "/public/images/avatar-dummy.svg";
 import AvatarEugen from "/public/images/nikhil_Kumar.jpg";
-import AvatarKrisztian from "/public/images/Kaishu Sahu.avif";
+import AvatarKrisztian from "/public/images/Kaishu_Sahu.png";
 
 import {
   ExperienceDetails,
