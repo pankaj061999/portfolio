@@ -41,10 +41,7 @@ const HeroSection = () => {
   };
 
   useEffect(() => {
-    // Call the function to update user information
     updatedUserInformation();
-
-    // LocalStorage for visit tracking
     const hasVisited = localStorage.getItem("hasVisited");
     if (!hasVisited) {
       const storedVisitCount = localStorage.getItem("visitCount");

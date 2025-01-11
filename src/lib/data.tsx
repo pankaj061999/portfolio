@@ -19,7 +19,6 @@ import LogoJavascript from "/public/images/logos/icon-javascript.svg";
 import LogoMongoDB from "/public/images/logos/icon-mongodb.svg";
 import LogoNextjs from "/public/images/logos/icon-nextjs.svg";
 import LogoNodejs from "/public/images/logos/icon-nodejs.svg";
-import LogoPostgreSQL from "/public/images/logos/icon-postgresql.svg";
 import LogoReact from "/public/images/logos/icon-react.svg";
 import LogoSocketLight from "/public/images/logos/icon-socket-light.svg";
 import LogoSocket from "/public/images/logos/icon-socket.svg";
@@ -33,8 +32,8 @@ import StremVibeWeb from "/public/images/StreamVibe1.png";
 import StrapeDarkLogo from "/public/images/logos/Strapidark.svg";
 
 import AvatarDummy from "/public/images/avatar-dummy.svg";
-import AvatarEugen from "/public/images/avatar-eugen.png";
-import AvatarKrisztian from "/public/images/avatar-krisztian.png";
+import AvatarEugen from "/public/images/nikhil_Kumar.jpg";
+import AvatarKrisztian from "/public/images/Kaishu Sahu.avif";
 
 import {
   ExperienceDetails,
@@ -122,11 +121,6 @@ export const TECHNOLOGIES: TechDetails[] = [
     logo: LogoSocket,
     darkModeLogo: LogoSocketLight,
     url: "https://socket.io/"
-  },
-  {
-    label: "PostgreSQL",
-    logo: LogoPostgreSQL,
-    url: "https://www.postgresql.org/"
   },
   {
     label: "MongoDB",
@@ -405,16 +399,16 @@ export const PROJECTS: ProjectDetails[] = [
 
 export const TESTIMONIALS: TestimonialDetails[] = [
   {
-    personName: "Uday Singh",
+    personName: "Kaishu Sahu",
     personAvatar: AvatarKrisztian,
-    title: "Founder - inboxgenie.io",
+    title: "Co-Founder, Farmako Healthcare",
     testimonial:
       "Job well done! I am really impressed. He is very very good at what he does:) I would recommend Sagar and will rehire in the future for Frontend development."
   },
   {
-    personName: "Jaswant Singh",
+    personName: "Nikhil Kumar",
     personAvatar: AvatarEugen,
-    title: "Founder - shosho.design",
+    title: "Founder & CIO, Farmako",
     testimonial:
       "Great guy, highly recommended for any COMPLEX front-end development job! His skills are top-notch and he will be an amazing addition to any team."
   },
@@ -423,6 +417,6 @@ export const TESTIMONIALS: TestimonialDetails[] = [
     personAvatar: AvatarDummy,
     title: "Freelancer",
     testimonial:
-      "Sagar was extremely easy and pleasant to work with and he truly cares about the project being a success. Sagar has a high level of knowledge and was able to work on my MERN stack application without any issues."
+      "Pankaj was extremely easy and pleasant to work with and he truly cares about the project being a success. Pankaj has a high level of knowledge and was able to work on my MERN stack application without any issues."
   }
 ];
