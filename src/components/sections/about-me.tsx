@@ -18,7 +18,7 @@ const AboutMeSection = () => {
           <div className="relative h-[380px] w-[320px] md:h-[460px] md:w-[380px] lg:h-[520px] lg:w-[440px]">
             <Image
               src={"https://i.postimg.cc/jSCW77F2/Pankaj-Banglore.jpg"}
-              alt="Fullpose of Sagar"
+              alt="Fullpose of Pankaj"
               className="absolute z-10 h-[360px] w-[280px] border-8 border-gray-50 max-md:left-5 md:right-0 md:top-0 md:h-[420px] md:w-[340px] lg:h-[480px] lg:w-[400px]"
               style={{ objectFit: 'cover' }}
               height={360}
