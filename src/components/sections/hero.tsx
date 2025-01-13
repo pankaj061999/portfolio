@@ -96,7 +96,7 @@ const HeroSection = () => {
 
             <div className="mt-8 flex flex-col items-center gap-4 md:flex-row">
               <a
-                href="mailto:pankaj@example.com"
+                href="mailto:pankajkmeena12@gmail.com"
                 className="rounded-full bg-blue-600 px-6 py-3 text-sm font-medium text-white shadow-md transition hover:bg-blue-700"
               >
                 Contact Me

@@ -10,6 +10,7 @@ import Typography from "@/components/general/typography";
 import Container from "@/components/layout/container";
 import useWindowSize from "@/hooks/use-window-size";
 import { copyTextToClipboard } from "@/lib/utils";
+import Link from "next/link";
 
 let email = "pankajkmeena12@gmail.com";
 let phone = "+91 8003356924";
@@ -79,14 +80,14 @@ const ContactSection = () => {
     if (!validateEmail(formData.email)) {
       setEmailError("Please enter a valid email address.");
       setIsSubmitting(false);
-    
+
       if ((window as any).dataLayer) {
         (window as any).dataLayer.push({
           event: "contact_form_submission_error",
-          errorMessage: "Invalid email address",
+          errorMessage: "Invalid email address"
         });
       }
-    
+
       return;
     }
 
@@ -96,9 +97,9 @@ const ContactSection = () => {
         {
           method: "POST",
           headers: {
-            "Content-Type": "application/json",
+            "Content-Type": "application/json"
           },
-          body: JSON.stringify(formData),
+          body: JSON.stringify(formData)
         }
       );
 
@@ -110,7 +111,7 @@ const ContactSection = () => {
         if ((window as any).dataLayer) {
           (window as any).dataLayer.push({
             event: "contact_form_submission_success",
-            message: "Message sent successfully",
+            message: "Message sent successfully"
           });
         }
       } else {
@@ -119,7 +120,7 @@ const ContactSection = () => {
         if ((window as any).dataLayer) {
           (window as any).dataLayer.push({
             event: "contact_form_submission_error",
-            errorMessage: "Failed to send message",
+            errorMessage: "Failed to send message"
           });
         }
       }
@@ -130,14 +131,13 @@ const ContactSection = () => {
       if ((window as any).dataLayer) {
         (window as any).dataLayer.push({
           event: "contact_form_submission_error",
-          errorMessage: error instanceof Error ? error.message : "Unknown error",
+          errorMessage: error instanceof Error ? error.message : "Unknown error"
         });
       }
     } finally {
       setIsSubmitting(false);
     }
   };
-  
 
   const handleModalClose = () => {
     setShowModal(false);
@@ -159,7 +159,10 @@ const ContactSection = () => {
           <div className="flex flex-col items-center gap-6 md:gap-12">
             <div className="flex flex-col items-center md:gap-4">
               <div className="flex items-center gap-4 md:gap-5">
-                <Mail className="h-6 w-6 md:h-8 md:w-8" />
+                <Link href="mailto:pankajkmeena12@gmail.com">
+                  <Mail className="h-6 w-6 md:h-8 md:w-8" />
+                </Link>
+
                 <Typography variant="h2">{email}</Typography>
                 <IconButton
                   size={width && width < 768 ? "md" : "lg"}
@@ -171,7 +174,12 @@ const ContactSection = () => {
                 </IconButton>
               </div>
               <div className="flex items-center gap-4 md:gap-5">
-                <Phone className="h-6 w-6 md:h-8 md:w-8" />
+                <Link
+                  href={`tel:${phone.replace(" ", "")}`}
+                  className="text-blue-600 hover:underline"
+                >
+                  <Phone className="h-6 w-6 md:h-8 md:w-8" />
+                </Link>
                 <Typography variant="h2">{phone}</Typography>
                 <IconButton
                   size={width && width < 768 ? "md" : "lg"}
