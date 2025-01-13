@@ -195,56 +195,6 @@ export const PROJECTS: ProjectDetails[] = [
     technologies: ["React", "Typescript", "Material Ui", "Redux", "Tailwindcss"]
   },
   {
-    name: "Nigeria Judicial",
-    description:
-      "A platform for the National Judicial Council of Nigeria (NJC), developed using Next.js and AI technologies. It features AI-driven case filtering, law book navigation, and region-specific listings, with detailed court and judgment pages. The platform enhances legal resource accessibility and user engagement through an intuitive, responsive interface, leveraging Material UI and advanced AI/LLM technologies.",
-    url: "http://4.231.121.68:3000/",
-    previewImage: NJCWebImage,
-    technologies: [
-      "React",
-      "Next.js",
-      "TypeScript",
-      "Material UI",
-      "Tailwindcss"
-    ]
-  },
-  {
-    name: "KismatBazzar",
-    description:
-      "Developed a dynamic ecommerce platform using Medusa in NodeJS with a Next.js frontend. The project featured a responsive UI/UX built with TypeScript, Tailwind CSS, and Material UI. Integrated Cashfree and Stripe for payment processing. Included a post-purchase game feature to boost user engagement and satisfaction.",
-    url: "http://example.com/",
-    previewImage: KismatBazzar,
-    technologies: [
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "Material UI",
-      "Medusa",
-      "Cashfree",
-      "Stripe",
-      "ReduxToolkit"
-    ]
-  },
-  {
-    name: "CMS Services",
-    description:
-      "Developed a custom content management system (CMS) with user authentication and role-based access control. Created RESTful APIs for flexible content delivery and a dynamic admin panel using React or Next.js. Utilized Node.js and MongoDB for backend development.",
-    url: "https://cms.fantv.in/",
-    previewImage: CMSFANTV,
-    technologies: [
-      "JavaScript",
-      "HTML/CSS",
-      "Node.js",
-      "React.js",
-      "Next.js",
-      "Webpack",
-      "Tailwind CSS",
-      "ReduxToolkit",
-      "Git",
-      "MongoDB"
-    ]
-  },
-  {
     name: "Blogify",
     description:
       'Conceptualized and developed "Blogify" a full-stack personal blog website. Utilized Express.js, Node.js, MongoDB, React.js, and Redux.js. Features include user authentication, social sharing, favorites, content reporting, and a follow system. Designed a responsive UI/UX to enhance user engagement and experience.',
@@ -264,10 +214,45 @@ export const PROJECTS: ProjectDetails[] = [
     ]
   },
   {
+    name: "Nigeria Judicial",
+    description:
+      "A platform for the National Judicial Council of Nigeria (NJC), developed using Next.js and AI technologies. It features AI-driven case filtering, law book navigation, and region-specific listings, with detailed court and judgment pages. The platform enhances legal resource accessibility and user engagement through an intuitive, responsive interface, leveraging Material UI and advanced AI/LLM technologies.",
+    url: "http://4.231.121.68:3000/",
+    previewImage: NJCWebImage,
+    technologies: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Material UI",
+      "Tailwindcss"
+    ]
+  },
+
+  {
+    name: "CMS Services",
+    description:
+      "Developed a custom content management system (CMS) with user authentication and role-based access control. Created RESTful APIs for flexible content delivery and a dynamic admin panel using React or Next.js. Utilized Node.js and MongoDB for backend development.",
+    url: "https://cms.fantv.in/",
+    previewImage: CMSFANTV,
+    technologies: [
+      "JavaScript",
+      "HTML/CSS",
+      "Node.js",
+      "React.js",
+      "Next.js",
+      "Webpack",
+      "Tailwind CSS",
+      "ReduxToolkit",
+      "Git",
+      "MongoDB"
+    ]
+  },
+
+  {
     name: "MartPuram",
     description:
       "Developed 'MartPuram' a comprehensive e-commerce platform where shopkeepers can list their shop information and products. This platform enables users to visit, browse, and easily find products and verify the existence of shops. The platform integrates Ola Map for location services and uses an OTP-less platform for user verification.",
-    url: "http://example.com/",
+    url: "https://martpuram.com/",
     previewImage: MartPuramWeb,
     technologies: [
       "Express.js",
@@ -370,6 +355,23 @@ export const PROJECTS: ProjectDetails[] = [
       "HTML",
       "CSS",
       "Git"
+    ]
+  },
+  {
+    name: "KismatBazzar",
+    description:
+      "Developed a dynamic ecommerce platform using Medusa in NodeJS with a Next.js frontend. The project featured a responsive UI/UX built with TypeScript, Tailwind CSS, and Material UI. Integrated Cashfree and Stripe for payment processing. Included a post-purchase game feature to boost user engagement and satisfaction.",
+    url: "https://kismatbazaar.com/",
+    previewImage: KismatBazzar,
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Material UI",
+      "Medusa",
+      "Cashfree",
+      "Stripe",
+      "ReduxToolkit"
     ]
   },
   {
