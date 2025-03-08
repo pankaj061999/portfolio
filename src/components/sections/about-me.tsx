@@ -9,7 +9,7 @@ const AboutMeSection = () => {
   return (
     <Container className="bg-gray-50" id="about">
       <div className="self-center">
-        <Tag label="About me" />
+        <Tag label="About Me" />
       </div>
 
       <div className="flex w-full flex-col justify-between gap-12 md:flex-row">
@@ -32,29 +32,31 @@ const AboutMeSection = () => {
         <div className="flex max-w-xl flex-col gap-6">
           <Typography variant="h3">Hi, I&apos;m Pankaj!</Typography>
           <Typography>
-            I&apos;m a full-stack developer specializing in React.js and Node.js. I&apos;m passionate about creating seamless, pixel-perfect digital experiences. With a focus on clean, readable code and user-centered design, I bring ideas to life through modern web technologies like Next.js, TypeScript, and TailwindCSS.
+            I&apos;m a full-stack developer with over 4 years of experience specializing in Next.js, React.js, and Node.js. I thrive on building high-performance, scalable applications and enjoy crafting seamless user experiences with modern web technologies like TypeScript and TailwindCSS.
           </Typography>
           <Typography>
-            After starting my web development journey in 2020, I now create cutting-edge web applications. I&apos;m always learning and love to tackle new challenges.
+            My journey in web development began in 2020, and since then, I&apos;ve worked on a variety of projects, always aiming to write clean, efficient, and maintainable code. I&apos;m also proficient in AWS, leveraging cloud solutions to build robust and scalable applications.
           </Typography>
           <Typography>
-            Currently, I&apos;m looking for a full-time opportunity to collaborate on exciting projects. If you think we could work well together, feel free to reach out!
+            Currently, I&apos;m exploring new opportunities where I can contribute my skills and collaborate on innovative projects. If you&apos;re looking for a dedicated developer to bring ideas to life, let&apos;s connect!
           </Typography>
           <Typography>
-            When I&apos;m not coding, you can find me on <Link externalLink href={EXTERNAL_LINKS.TWITTER}>Twitter</Link> or <Link externalLink href={EXTERNAL_LINKS.GITHUB}>GitHub</Link>, sharing my journey and building in public.
+            When I&apos;m not coding, you can find me sharing my journey and building in public on <Link externalLink href={EXTERNAL_LINKS.TWITTER}>Twitter</Link> or <Link externalLink href={EXTERNAL_LINKS.GITHUB}>GitHub</Link>.
           </Typography>
           <Typography>Some quick facts about me:</Typography>
           <div className="flex flex-col gap-2 md:flex-row md:gap-6">
             <ul className="flex list-inside list-disc flex-col gap-2">
               <Typography component="li">B.Tech in Biotechnology, IIT Roorkee (2020)</Typography>
-              <Typography component="li">Full-time web developer</Typography>
+              <Typography component="li">4+ years of experience as a full-stack developer</Typography>
+              <Typography component="li">Expert in Next.js, React.js, Node.js & AWS</Typography>
             </ul>
             <ul className="flex list-inside list-disc flex-col gap-2">
-              <Typography component="li">Avid learner & aspiring indie hacker</Typography>
+              <Typography component="li">Passionate about AI, IoT, and blockchain</Typography>
+              <Typography component="li">Aspiring indie hacker & tech entrepreneur</Typography>
             </ul>
           </div>
           <Typography>
-            If you&apos;re looking for a passionate, results-driven developer, I&apos;d love to chat. Let&apos;s connect!
+            If you&apos;re looking for a skilled and results-driven developer, I&apos;d love to chat. Let&apos;s build something amazing together!
           </Typography>
         </div>
       </div>

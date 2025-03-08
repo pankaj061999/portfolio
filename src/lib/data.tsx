@@ -28,7 +28,8 @@ import MartPuramWeb from "/public/images/Martpuramweb.png";
 import NJCWebImage from "/public/images/NJCWeb.png";
 import SmartShieldWeb from "/public/images/SmartShield_Web.png";
 import StremVibeWeb from "/public/images/StreamVibe1.png";
-
+import MoneefloLogo from "/public/images/Moneeflo.jpg";
+import LogoFreelance from "/public/images/Freelancerlogo.svg";
 import StrapeDarkLogo from "/public/images/logos/Strapidark.svg";
 
 import AvatarDummy from "/public/images/avatar-dummy.svg";
@@ -182,6 +183,39 @@ export const EXPERIENCES: ExperienceDetails[] = [
       "Community: Created React components, real-time features with Socket.io, and optimized user engagement.",
       "Analytics: Implemented Google Tag Manager and Analytics. Built systems with search, sort, edit, and payment functionalities."
     ]
+  },
+  {
+    logo: LogoFreelance,
+    darkModeLogo: LogoFreelance,
+    logoAlt: "Freelancing",
+    position: "Freelance Software Developer",
+    startDate: new Date(2023, 9),
+    endDate: new Date(2025, 0),
+    summary: [
+      "Designed, developed, and deployed full-stack applications across various industries, focusing on AI, fintech, e-commerce, and media streaming.",
+      "Created AGIE, a Generative AI platform utilizing Next.js, Material UI, and AI integration for intelligent content generation.",
+      "Built NJC Platform, an AI-powered legal tool for case filtering and document analysis using Next.js.",
+      "Developed a feature-rich e-commerce platform using Medusa, integrating Cashfree/Stripe for seamless payments and gamified shopping experiences.",
+      "Engineered Blogify, a full-stack blogging platform with MongoDB, Express.js, React.js, and secure user authentication.",
+      "Built MartPuram, an innovative e-commerce site featuring OTP-less login and Ola Maps integration for enhanced user experience.",
+      "Developed StreamVibe, an OTT platform with a custom Video.js player, optimized for high-performance streaming using Node.js and Next.js.",
+      "Led multiple personal and client projects, leveraging AI-driven automation, fintech integrations, and scalable web solutions."
+    ]
+  },
+  {
+    logo: MoneefloLogo,
+    darkModeLogo: MoneefloLogo,
+    logoAlt: "MoneeFlo logo",
+    position: "Full Stack Developer",
+    startDate: new Date(2025, 0),
+    endDate: undefined,
+    summary: [
+      "MoneeFlo: Contributing to an RBI-licensed fintech platform simplifying cross-border payments, processing over USD 30 million.",
+      "Front-End: Developing secure, high-performance fintech applications using React.js, Next.js, and TypeScript.",
+      "Back-End: Building robust backend systems with Node.js and MongoDB. Implemented real-time transaction tracking, KYC, and API authentication.",
+      "API Integration: Integrated third-party APIs for forex rates and payment processing.",
+      "Performance Optimization: Enhanced transaction speeds and reduced page load times for a seamless user experience."
+    ]
   }
 ];
 
@@ -227,7 +261,6 @@ export const PROJECTS: ProjectDetails[] = [
       "Tailwindcss"
     ]
   },
-
   {
     name: "CMS Services",
     description:
@@ -247,7 +280,6 @@ export const PROJECTS: ProjectDetails[] = [
       "MongoDB"
     ]
   },
-
   {
     name: "MartPuram",
     description:
