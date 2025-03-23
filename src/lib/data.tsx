@@ -280,28 +280,28 @@ export const PROJECTS: ProjectDetails[] = [
       "MongoDB"
     ]
   },
-  {
-    name: "MartPuram",
-    description:
-      "Developed 'MartPuram' a comprehensive e-commerce platform where shopkeepers can list their shop information and products. This platform enables users to visit, browse, and easily find products and verify the existence of shops. The platform integrates Ola Map for location services and uses an OTP-less platform for user verification.",
-    url: "https://martpuram.com/",
-    previewImage: MartPuramWeb,
-    technologies: [
-      "Express.js",
-      "Node.js",
-      "MongoDB",
-      "React.js",
-      "Redux.js",
-      "ReduxToolkit",
-      "Socket.io",
-      "HTML",
-      "CSS",
-      "Git",
-      "firebase",
-      "Ola Map",
-      "OTPLess"
-    ]
-  },
+  // {
+  //   name: "MartPuram",
+  //   description:
+  //     "Developed 'MartPuram' a comprehensive e-commerce platform where shopkeepers can list their shop information and products. This platform enables users to visit, browse, and easily find products and verify the existence of shops. The platform integrates Ola Map for location services and uses an OTP-less platform for user verification.",
+  //   url: "https://martpuram.com/",
+  //   previewImage: MartPuramWeb,
+  //   technologies: [
+  //     "Express.js",
+  //     "Node.js",
+  //     "MongoDB",
+  //     "React.js",
+  //     "Redux.js",
+  //     "ReduxToolkit",
+  //     "Socket.io",
+  //     "HTML",
+  //     "CSS",
+  //     "Git",
+  //     "firebase",
+  //     "Ola Map",
+  //     "OTPLess"
+  //   ]
+  // },
   {
     name: "Streamvibe",
     description:
@@ -367,45 +367,45 @@ export const PROJECTS: ProjectDetails[] = [
       "Git"
     ]
   },
-  {
-    name: "SmartShield",
-    description:
-      "SmartShield is a startup leveraging AI and IoT to offer intelligent solutions. Our platform enhances security, monitoring, and operational efficiency across industries. By using AI algorithms and IoT devices, SmartShield creates smarter, safer environments, pushing the boundaries of technology to improve both business and individual performance.",
-    url: "https://smartshield.netlify.app/",
-    previewImage: SmartShieldWeb,
-    technologies: [
-      "Artificial Intelligence",
-      "IoT",
-      "Node.js",
-      "Next.js",
-      "MongoDB",
-      "React.js",
-      "Redux.js",
-      "ReduxToolkit",
-      "Material-UI",
-      "Socket.io",
-      "HTML",
-      "CSS",
-      "Git"
-    ]
-  },
-  {
-    name: "KismatBazzar",
-    description:
-      "Developed a dynamic ecommerce platform using Medusa in NodeJS with a Next.js frontend. The project featured a responsive UI/UX built with TypeScript, Tailwind CSS, and Material UI. Integrated Cashfree and Stripe for payment processing. Included a post-purchase game feature to boost user engagement and satisfaction.",
-    url: "https://kismatbazaar.com/",
-    previewImage: KismatBazzar,
-    technologies: [
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "Material UI",
-      "Medusa",
-      "Cashfree",
-      "Stripe",
-      "ReduxToolkit"
-    ]
-  },
+  // {
+  //   name: "SmartShield",
+  //   description:
+  //     "SmartShield is a startup leveraging AI and IoT to offer intelligent solutions. Our platform enhances security, monitoring, and operational efficiency across industries. By using AI algorithms and IoT devices, SmartShield creates smarter, safer environments, pushing the boundaries of technology to improve both business and individual performance.",
+  //   url: "https://smartshield.netlify.app/",
+  //   previewImage: SmartShieldWeb,
+  //   technologies: [
+  //     "Artificial Intelligence",
+  //     "IoT",
+  //     "Node.js",
+  //     "Next.js",
+  //     "MongoDB",
+  //     "React.js",
+  //     "Redux.js",
+  //     "ReduxToolkit",
+  //     "Material-UI",
+  //     "Socket.io",
+  //     "HTML",
+  //     "CSS",
+  //     "Git"
+  //   ]
+  // },
+  // {
+  //   name: "KismatBazzar",
+  //   description:
+  //     "Developed a dynamic ecommerce platform using Medusa in NodeJS with a Next.js frontend. The project featured a responsive UI/UX built with TypeScript, Tailwind CSS, and Material UI. Integrated Cashfree and Stripe for payment processing. Included a post-purchase game feature to boost user engagement and satisfaction.",
+  //   url: "#",
+  //   previewImage: KismatBazzar,
+  //   technologies: [
+  //     "Next.js",
+  //     "TypeScript",
+  //     "Tailwind CSS",
+  //     "Material UI",
+  //     "Medusa",
+  //     "Cashfree",
+  //     "Stripe",
+  //     "ReduxToolkit"
+  //   ]
+  // },
   {
     name: "PeerLearnX",
     description:
